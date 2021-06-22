@@ -1,0 +1,52 @@
+<div class="section-container">
+    <h2>
+      Latest Orders
+    </h2>
+    <table class="table table-inverse table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>ctn</th>
+          <th>dn</th>
+          <th>cn</th>
+          <th>Cert Status</th>
+          <th>Requester Employee number</th>
+          <th>Expiry Date</th>
+          <th>Days to Expire</th>
+          <th>Cert Usage</th>
+          <th>Request Submission Date</th>
+          <th>Cert Serial Number</th>
+          <th>App Code</th>
+          <th>CSR Key Size</th>
+          <th>SANs</th>
+          <th>Mailbox</th>
+          <th>Signature Algorithm</th>
+          <th>Expiry Notification Status</th>
+          <th># of Licenses</th>
+          <th>User comment</th>
+          <th>Cert issuer</th>
+          <th>Request Type</th>
+          <th>Cert type</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>er.placed | date: 'short' }}</td>
+          <td>er.completed | date: 'short' }}</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- <app-pagination
+    (goPage)="goToPage($event)"
+    (goPrev)="goToPrevious()"
+    (goNext)="goToNext()"
+    [page]="page"
+    [perPage]="limit"
+    [count]="total">
+    </app-pagination> -->
+  </div>
